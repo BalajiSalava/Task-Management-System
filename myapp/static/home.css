@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    background-color:  rgb(33, 34, 34);
+}
+.logo{
+    height: 120px;
+    width: 100vw;
+    font-style: italic;
+    font-size: xx-large;
+    color: rgb(197, 40, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgb(140, 231, 5);
+}
+.nav{
+    border: 1px;
+    border-left: 0px ;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(106, 103, 103);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;
+}
+a{
+    text-decoration: none;
+    background-color: inherit;
+    color: rgb(102, 216, 216);
+    font-size: 25px;
+}
+a:hover{
+    color: rgb(21, 241, 69);
+    text-shadow:0px 0px 10px rgb(75, 247, 247);
+}
+footer{
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(41, 60, 22);
+    color: rgb(184, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+}
+footer p{
+    background-color: inherit;
+}
+footer b{
+    background-color: inherit;
+}
+section{
+    margin-top: 2vh;
+    height: 63vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1,h4{
+    background-color: inherit;
+}
+section>.Data{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+}
+section>.Data>.data{
+    margin: 2%;
+    height: 200px;
+    width: 90%;
+    border: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(106, 103, 103);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+section>.Data>.data:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;
+}
+section>.Data>.data>.ud{
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ud b{
+    color: rgb(88, 88, 187);
+}
+.ud b:nth-child(2){
+    color: rgb(18, 139, 183);
+}
+.ud b:last-child{
+    color: rgb(156, 52, 52);
+}
+.ud a{
+    font-size: 15px;
+}
+.ud a:hover{
+    color: red;
+    text-shadow: 0px 0px 10px yellow;
+}
+.data h1{
+    color: rgb(176, 188, 40);
+
+}
+.data h4{
+    color: rgb(64, 178, 129);
+}
+section form{
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form >.data{
+    height: 90%;
+    width: 100%;
+    border: 1px;
+    border-color: rgb(106, 103, 103);
+    border-style: solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form>.data>.main{
+    height: 50%;
+    width: 50%;
+    
+}
+.main h1{
+    color: rgba(254, 254, 69, 0.749);
+    text-shadow: 0px 0px 10px rgb(241, 174, 4);
+}
+label{
+    color: blanchedalmond;
+    font-size: larger;
+    background: inherit;
+}
+form>.data:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;
+}
+input{
+    width: 35%;
+    border: 1px;
+    border-color: rgb(106, 103, 103);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    outline: none;
+    color: rgb(145, 206, 70);
+}
+input:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;
+}
+input::placeholder{
+    color: rgb(129, 127, 96);
+}
+.main option{
+    color: rgb(154, 93, 17);
+    width: 35%;
+    border: 1px;
+    border-color: rgb(106, 103, 103);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    outline: none;
+    color: rgb(145, 206, 70);
+}
+.main option:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;   
+}
+.main select{
+    width: 35%;
+    border: 1px;
+    border-color: rgb(106, 103, 103);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    outline: none;
+    color: rgb(145, 206, 70);
+}
+.main select:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;
+}
+button{
+    font-size: 20px;
+    padding: 8px 20px ;
+    color: rgb(102, 216, 216);
+    border: 1px ;
+    border-color: rgb(106, 103, 103);
+    border-radius: 20px;
+    border-style: solid;
+}
+button:hover{
+    box-shadow: 0px 0px 10px rgb(152, 214, 59);
+    color: rgb(167, 246, 50);
+    border-color: rgb(115, 181, 16);
+    transition: 0.5s;
+}
+section>.ud{
+    width: 60%;
+    height: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+article{
+    margin-top: 2vh;
+    height: 63vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+    
+}
+article >header{
+    background: inherit;
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    color: rgb(189, 194, 37);
+}
+article p{
+    background: inherit;
+    color: rgba(191, 220, 244, 0.813);
+    font-size: medium;
+}
+article>.content{
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.content>.futurs{
+    height: 95%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 4vh;
+
+}
+.content>.usage{
+    height: 95%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3vh;
+}
+.content h1{
+    color: rgba(240, 55, 55, 0.831);
+}
+.content b{
+    color: rgba(240, 255, 240, 0.763);
+}
+article .contact{
+    margin-top: 2vh;
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    
+}
+.contact form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: larger;
+}
+form textarea{
+    border: 1px;
+    border-color: rgb(106, 103, 103);
+    border-style: solid;
+    border-radius: 10px;
+    outline: none;
+    color: rgb(145, 206, 70);
+}
+form textarea::placeholder{
+    color: rgb(129, 127, 96);
+}
+
+form textarea:hover{
+    box-shadow: 0px 0px 10px rgb(198, 197, 197);
+    transition: 0.8s;
+}

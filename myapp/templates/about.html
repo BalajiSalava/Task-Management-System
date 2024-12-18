@@ -1,0 +1,41 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<article>
+    <header>
+        <h1>Task Management System</h1>
+        <p>This repository contains a simple task management system implemented using Django. The task management system provides a user-friendly graphical user interface (GUI) for managing tasks, including adding new tasks, viewing existing tasks, and Updating tasks also deleting the tasks.</p></p>
+    </header>
+    <div class='content'>
+        <div class="futurs">
+            <h1>FUTURS</h1>
+            <b>Add New Task: Easily add new tasks to the system using a "add task".</b>
+            <b>View Tasks: View the list of tasks in a separate dialog window.</b>
+            <b>Update task : We can also update the excisting tasks.</b>   
+            <b>History: We can store delete tasks in history.</b>
+            <b>Delete all Restore all:We cav restore or delete all at one click.</b>
+                
+        </div>
+        <div class="usage">
+            <h1>Usage </h1>
+            <p>Upon launching the application, a main window will appear, providing access to various </p>
+            <b>Click the "Add New Task" button to add a new task</b>
+            <b>Click the "Update" button to update the task</b>
+            <b>Click the "Delete" button to delete task</b>
+            <b>Click 'History' will see delete tasks</b>
+            <b>Click "Restore" to Restore the perticular task</b>
+            <b>Click the "Restore All" button to restore all tasks at time</b>
+            <b>Click the "Delete All" button to delete all task at time</b>
+        </div>
+    </div>
+    <div class="contact">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{a}}
+            <button>submit</button>
+        </form>
+    </div>
+   
+</article>
+
+{% endblock content %}

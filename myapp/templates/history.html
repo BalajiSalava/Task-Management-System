@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+{% block content %}
+
+
+<section>
+    <div class="Data">
+        {% for i in data %}
+        <div class="data">
+            <div class="ud">
+                <b>Created:{{i.Created}}</b>
+            </div>
+            <h1>{{i.Title}} </h1>
+            <h4>{{i.Disc}}</h4> 
+            <div class="ud">
+                <a href="{% url 'restore' i.id %}">Restore</a><a href="{% url 'dele_restore' i.id %}">Delete</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="ud">
+        <a href="{% url 'restoreall' %}">Restore All</a><a href="{% url 'deleteall' %}">Delete All</a>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<section>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="data">
+        <div class="main">
+            <center>
+            <h1>Enter Deatels</h1><br>
+            <label for="">Title :</label>
+            <input type="text" name="Title" placeholder="Enter the text" value="{{data.Title}}"><br><br>
+            <label for="">Discription :</label>
+            <input type="text" name="Disc" placeholder="Enter the text" value="{{data.Disc}}"><br><br>
+            <button>submit</button>
+            </center>
+        </div>
+    </div>
+</form>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class="logo">
+        <h1>TASK MANAGEMENT</h1>
+    </div>
+    {% include 'nav.html' %}
+    {% block content %}
+    <section>
+        <div class="Data">
+            {% for i in data %}
+            <div class="data">
+                <div class="ud">
+                    <b>Created:{{i.Created}}</b>
+                </div>
+                <h1>{{i.Title}} </h1>
+                <h4>{{i.Disc}}</h4> 
+                <div class="ud">
+                    <a href="{% url 'update' i.id %}">Update</a><a href="{% url 'delete' i.id %}">  Delete</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endblock content %}
+
+    <footer>
+        <p>Designed by <b>BALAJI SALAVA</b></p>
+
+    </footer>
+</body>
+</html>
